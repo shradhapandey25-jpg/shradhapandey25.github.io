@@ -26,6 +26,20 @@
       padding: 0;
     }
 
+    .profile-photo-wrapper {
+  margin-bottom: 24px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 3px solid #52ffa8;
+  box-shadow: 0 0 25px rgba(82, 255, 168, 0.20);
+}
+
     html {
       scroll-behavior: smooth;
       scroll-padding-top: 80px;
@@ -561,7 +575,13 @@
           <div class="command">
             <span class="prompt">$</span> whoami
           </div>
-
+<div class="profile-photo-wrapper">
+  <img
+    src="profile.jpg"
+    alt="Shradha Pandey"
+    class="profile-photo"
+  >
+</div>
           <h1>Shradha Pandey</h1>
 
           <div class="hero-title">
