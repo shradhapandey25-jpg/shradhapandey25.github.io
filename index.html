@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shradha Pandey | IT Support Specialist</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Shradha Pandey, an IT Support Specialist with experience in Windows, Microsoft 365, Active Directory, Intune, PowerShell, endpoint support, networking, and IT operations."
+  >
+
+  <meta
+    name="keywords"
+    content="Shradha Pandey, IT Support Specialist, Desktop Support, Help Desk, Active Directory, Microsoft 365, Intune, PowerShell, Windows 11, ServiceNow, Jira, Azure, AWS"
+  >
+
+  <meta name="author" content="Shradha Pandey">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      background: #050a0f;
+      color: #d7e0e7;
+      font-family: "Courier New", Courier, monospace;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #52ffa8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+
+    .container {
+      width: min(1050px, 90%);
+      margin: 0 auto;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(5, 10, 15, 0.96);
+      border-bottom: 1px solid #18352a;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+      width: min(1050px, 90%);
+      margin: auto;
+      min-height: 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      color: #52ffa8;
+      font-weight: bold;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #9caeb8;
+      font-size: 0.87rem;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: #52ffa8;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: calc(100vh - 64px);
+      display: flex;
+      align-items: center;
+      padding: 70px 0;
+    }
+
+    .terminal {
+      width: 100%;
+      background: #081018;
+      border: 1px solid #1c3b30;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 50px rgba(82, 255, 168, 0.07);
+    }
+
+    .terminal-header {
+      height: 42px;
+      background: #0d1720;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      border-bottom: 1px solid #1a2b34;
+    }
+
+    .terminal-buttons {
+      display: flex;
+      gap: 8px;
+    }
+
+    .terminal-buttons span {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      display: block;
+    }
+
+    .red {
+      background: #ff5f56;
+    }
+
+    .yellow {
+      background: #ffbd2e;
+    }
+
+    .green {
+      background: #27c93f;
+    }
+
+    .terminal-title {
+      color: #647783;
+      font-size: 0.8rem;
+      margin: auto;
+      padding-right: 45px;
+    }
+
+    .terminal-body {
+      padding: 58px 48px;
+    }
+
+    .command {
+      color: #52ffa8;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .prompt {
+      color: #52ffa8;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: clamp(2.6rem, 8vw, 5.2rem);
+      line-height: 1.05;
+      margin-bottom: 14px;
+      letter-spacing: -3px;
+    }
+
+    .hero-title {
+      color: #52ffa8;
+      font-size: clamp(1rem, 3vw, 1.3rem);
+      margin-bottom: 26px;
+    }
+
+    .hero-description {
+      max-width: 760px;
+      color: #a1b0b9;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.04rem;
+      line-height: 1.85;
+      margin-bottom: 34px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      border: 1px solid #52ffa8;
+      padding: 11px 19px;
+      border-radius: 5px;
+      color: #52ffa8;
+      transition: all 0.2s ease;
+      font-size: 0.92rem;
+    }
+
+    .button:hover {
+      background: #52ffa8;
+      color: #050a0f;
+      transform: translateY(-1px);
+    }
+
+    .button-primary {
+      background: #52ffa8;
+      color: #050a0f;
+      font-weight: bold;
+    }
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
+    section {
+      padding: 90px 0;
+    }
+
+    section + section {
+      border-top: 1px solid #13232c;
+    }
+
+    .section-label {
+      color: #52ffa8;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+
+    h2 {
+      color: #ffffff;
+      font-size: clamp(1.8rem, 4vw, 2.2rem);
+      margin-bottom: 35px;
+    }
+
+    .about-text {
+      color: #a9b7bf;
+      max-width: 870px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.02rem;
+      line-height: 1.9;
+    }
+
+    .about-text p + p {
+      margin-top: 18px;
+    }
+
+    /* =========================
+       SKILLS
+    ========================= */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .skill-card {
+      background: #081018;
+      border: 1px solid #172b34;
+      border-radius: 8px;
+      padding: 23px;
+      transition: all 0.2s ease;
+    }
+
+    .skill-card:hover {
+      border-color: #52ffa8;
+      transform: translateY(-3px);
+    }
+
+    .skill-card h3 {
+      color: #52ffa8;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .skill-card p {
+      color: #91a2ac;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+
+    /* =========================
+       EXPERIENCE
+    ========================= */
+
+    .experience-item {
+      position: relative;
+      border-left: 2px solid #23473a;
+      padding: 0 0 48px 30px;
+      margin-left: 8px;
+    }
+
+    .experience-item::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      background: #52ffa8;
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(82, 255, 168, 0.35);
+    }
+
+    .experience-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .experience-item h3 {
+      color: #ffffff;
+      font-size: 1.22rem;
+    }
+
+    .company {
+      color: #52ffa8;
+      margin: 4px 0;
+    }
+
+    .date {
+      color: #647783;
+      font-size: 0.9rem;
+      margin-bottom: 14px;
+    }
+
+    .experience-item ul {
+      padding-left: 18px;
+      max-width: 850px;
+      color: #9eacb5;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .experience-item li {
+      margin-bottom: 9px;
+    }
+
+    /* =========================
+       CERTIFICATIONS
+    ========================= */
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .cert {
+      background: #081018;
+      border: 1px solid #172b34;
+      padding: 15px 18px;
+      border-radius: 6px;
+      color: #b3c0c7;
+      font-family: Arial, Helvetica, sans-serif;
+      transition: all 0.2s ease;
+    }
+
+    .cert:hover {
+      border-color: #52ffa8;
+      transform: translateY(-2px);
+    }
+
+    .cert::before {
+      content: "✓ ";
+      color: #52ffa8;
+      font-weight: bold;
+    }
+
+    /* =========================
+       EDUCATION
+    ========================= */
+
+    .education-card {
+      background: #081018;
+      border: 1px solid #172b34;
+      border-radius: 8px;
+      padding: 25px;
+      max-width: 850px;
+    }
+
+    .education-card h3 {
+      color: #ffffff;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    .education-card .school {
+      color: #52ffa8;
+      margin-bottom: 7px;
+    }
+
+    .education-card p {
+      color: #95a5ae;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-box {
+      background: #081018;
+      border: 1px solid #1b3a30;
+      border-radius: 10px;
+      padding: 40px;
+    }
+
+    .contact-box p {
+      color: #9caeb8;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 25px;
+      max-width: 760px;
+      line-height: 1.8;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      border-top: 1px solid #13232c;
+      color: #566772;
+      font-size: 0.8rem;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 18px;
+      background: #52ffa8;
+      vertical-align: middle;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%,
+      50% {
+        opacity: 1;
+      }
+
+      51%,
+      100% {
+        opacity: 0;
+      }
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 850px) {
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .nav-links {
+        display: none;
+      }
+
+      .terminal-body {
+        padding: 38px 24px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .contact-box {
+        padding: 28px 22px;
+      }
+
+      .experience-item {
+        padding-left: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <nav>
+    <div class="nav-container">
+
+      <a href="#home" class="logo">
+        shradha@portfolio:~$
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#experience">experience</a>
+        <a href="#certifications">certifications</a>
+        <a href="#education">education</a>
+        <a href="#contact">contact</a>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <main id="home" class="hero">
+
+    <div class="container">
+
+      <div class="terminal">
+
+        <div class="terminal-header">
+
+          <div class="terminal-buttons">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+
+          <div class="terminal-title">
+            shradha@portfolio
+          </div>
+
+        </div>
+
+        <div class="terminal-body">
+
+          <div class="command">
+            <span class="prompt">$</span> whoami
+          </div>
+
+          <h1>Shradha Pandey</h1>
+
+          <div class="hero-title">
+            IT Support Specialist | Desktop & End-User Support
+          </div>
+
+          <p class="hero-description">
+            IT support professional with 8+ years of experience delivering
+            technical support, troubleshooting Windows and Microsoft 365
+            environments, administering Active Directory, managing endpoints,
+            automating administrative tasks with PowerShell, and resolving
+            technical issues from intake through resolution.
+          </p>
+
+          <div class="buttons">
+
+            <a
+              href="https://www.linkedin.com/in/puju11/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-primary"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="Shradha_Pandey_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button"
+            >
+              View Resume
+            </a>
+
+            <a
+              href="#skills"
+              class="button"
+            >
+              ./skills
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       ABOUT
+  ========================== -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <div class="section-label">
+        $ cat about.txt
+      </div>
+
+      <h2>About Me</h2>
+
+      <div class="about-text">
+
+        <p>
+          I am an IT support professional with more than eight years of
+          experience providing reliable technical support across Windows,
+          Microsoft 365, Active Directory, endpoint management, hardware,
+          networking, and cloud-based environments.
+        </p>
+
+        <p>
+          My experience includes supporting users remotely and in person,
+          administering user accounts and access, managing technical incidents,
+          troubleshooting hardware and software, coordinating escalations with
+          infrastructure teams and vendors, and documenting solutions that
+          improve support operations.
+        </p>
+
+        <p>
+          I enjoy solving technical problems, improving processes, automating
+          repetitive administrative tasks, and helping users get back to work
+          quickly and confidently.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SKILLS
+  ========================== -->
+
+  <section id="skills">
+
+    <div class="container">
+
+      <div class="section-label">
+        $ ls ./technical-skills
+      </div>
+
+      <h2>Technical Skills</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>Microsoft Environment</h3>
+          <p>
+            Windows 10/11, Microsoft 365, Office Suite,
+            Active Directory, Entra ID, and Microsoft Intune.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Desktop Support</h3>
+          <p>
+            End-user support, desktop and laptop troubleshooting,
+            hardware configuration, deployment, and technical assistance.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Operating Systems</h3>
+          <p>
+            Windows 10/11, macOS, and Ubuntu Linux environments.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Ticketing & Documentation</h3>
+          <p>
+            ServiceNow, Jira, incident management,
+            ticket lifecycle ownership, and knowledge base documentation.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Networking</h3>
+          <p>
+            TCP/IP, DNS, DHCP, connectivity troubleshooting,
+            and networking fundamentals.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>PowerShell</h3>
+          <p>
+            PowerShell scripting and automation for identity provisioning,
+            administration, and repetitive IT tasks.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Endpoint Management</h3>
+          <p>
+            Microsoft Intune, endpoint configuration,
+            user device support, and access management.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Telephony</h3>
+          <p>
+            Genesys cloud-based phone system support,
+            voice troubleshooting, and call-routing support.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Cloud & Identity</h3>
+          <p>
+            Microsoft Azure, Entra ID, AWS,
+            user identity administration, and access management.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       EXPERIENCE
+  ========================== -->
+
+  <section id="experience">
+
+    <div class="container">
+
+      <div class="section-label">
+        $ cat experience.log
+      </div>
+
+      <h2>Professional Experience</h2>
+
+
+      <div class="experience-item">
+
+        <h3>IT Support Technician II</h3>
+
+        <div class="company">
+          Western Governors University
+        </div>
+
+        <div class="date">
+          November 2022 - January 2024
+        </div>
+
+        <ul>
+          <li>
+            Delivered on-site and remote technical support for Windows,
+            Microsoft 365, hardware, software, and connectivity issues.
+          </li>
+
+          <li>
+            Administered Active Directory user accounts and access for
+            onboarding, offboarding, and identity management requests.
+          </li>
+
+          <li>
+            Managed support tickets from initial intake through resolution
+            while maintaining clear communication with end users.
+          </li>
+
+          <li>
+            Created and maintained PowerShell scripts to automate identity
+            provisioning and routine administrative tasks.
+          </li>
+
+          <li>
+            Supported the Genesys cloud-based phone system and troubleshot
+            voice and call-routing issues.
+          </li>
+
+          <li>
+            Coordinated escalations with infrastructure teams and vendors for
+            advanced troubleshooting, equipment repair, and replacement.
+          </li>
+
+          <li>
+            Contributed to knowledge base documentation and process
+            improvement initiatives.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="experience-item">
+
+        <h3>IT Support Technician I</h3>
+
+        <div class="company">
+          Western Governors University
+        </div>
+
+        <div class="date">
+          March 2022 - November 2022
+        </div>
+
+        <ul>
+          <li>
+            Resolved software, hardware, and network connectivity incidents
+            in a high-volume support environment.
+          </li>
+
+          <li>
+            Managed multiple concurrent support tickets while adjusting
+            priorities based on business and user needs.
+          </li>
+
+          <li>
+            Provided remote and in-person technical support to employees with
+            varying levels of technical knowledge.
+          </li>
+
+          <li>
+            Contributed to knowledge base articles and process documentation
+            to improve support consistency.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="experience-item">
+
+        <h3>Information Technology Assistant</h3>
+
+        <div class="company">
+          Aatmagyan Prachar Sangh
+        </div>
+
+        <div class="date">
+          June 2013 - January 2020
+        </div>
+
+        <ul>
+          <li>
+            Provided end-to-end technical support for users, hardware,
+            software, and general IT operations.
+          </li>
+
+          <li>
+            Handled incident response, workstation setup, hardware builds,
+            troubleshooting, and end-user training.
+          </li>
+
+          <li>
+            Maintained documentation for system configurations, support
+            procedures, and technical resolutions.
+          </li>
+
+          <li>
+            Researched and adopted new technologies while developing
+            foundational knowledge in infrastructure, cloud platforms,
+            networking, and cybersecurity.
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CERTIFICATIONS
+  ========================== -->
+
+  <section id="certifications">
+
+    <div class="container">
+
+      <div class="section-label">
+        $ ./list-certifications.sh
+      </div>
+
+      <h2>Certifications</h2>
+
+      <div class="cert-grid">
+
+        <div class="cert">
+          CompTIA A+
+        </div>
+
+        <div class="cert">
+          CompTIA Network+
+        </div>
+
+        <div class="cert">
+          CompTIA Security+
+        </div>
+
+        <div class="cert">
+          CompTIA Server+
+        </div>
+
+        <div class="cert">
+          CompTIA CySA+
+        </div>
+
+        <div class="cert">
+          Microsoft Azure Administrator Associate (AZ-104)
+        </div>
+
+        <div class="cert">
+          AWS Solutions Architect
+        </div>
+
+        <div class="cert">
+          Google IT Support Professional Certificate
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       EDUCATION
+  ========================== -->
+
+  <section id="education">
+
+    <div class="container">
+
+      <div class="section-label">
+        $ cat education.txt
+      </div>
+
+      <h2>Education</h2>
+
+      <div class="education-card">
+
+        <h3>
+          High School Diploma, Business Management
+        </h3>
+
+        <div class="school">
+          Mangalodaya Multiple Campus, Nepal
+        </div>
+
+        <p>
+          2010 - 2012
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <div class="section-label">
+        $ connect shradha
+      </div>
+
+      <h2>Let's Connect</h2>
+
+      <div class="contact-box">
+
+        <p>
+          I am interested in opportunities in IT support, desktop support,
+          help desk, systems support, endpoint support, and IT operations.
+          Connect with me on LinkedIn or view my resume for more information
+          about my professional experience and technical background.
+        </p>
+
+        <div class="buttons">
+
+          <a
+            href="https://www.linkedin.com/in/puju11/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button button-primary"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="Shradha_Pandey_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            View Resume
+          </a>
+
+          <a
+            href="https://github.com/shradhapandey25"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <p>
+      shradha@portfolio:~$ <span class="cursor"></span>
+    </p>
+
+    <p style="margin-top: 8px;">
+      © 2026 Shradha Pandey
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
